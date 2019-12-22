@@ -1,0 +1,6 @@
+# get to the write  dir
+cd build
+# to generate the makefile
+cmake ../filecount/
+# to compile the project
+make
