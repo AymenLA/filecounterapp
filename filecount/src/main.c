@@ -1,9 +1,9 @@
-/******************************************************************************/
-/* CARTOUCHE : ORAGANISME=ANTHEA-TS.COM */
-/* CARTOUCHE : PROJET=COMPTEUR DE FICHIER */
-/* CARTOUCHE : AUTEUR=$USER */
-/* CARTOUCHE : DATE=$DATE */
-/* CARTOUCHE :*/
+/******************************************************************************
+* \brief  : ORAGANISME=ANTHEA-TS.COM
+* \brief : PROJET=COMPTEUR DE FICHIER
+* \brief : AUTEUR=$USER
+* \brief : DATE=$DATE
+* \brief :
 /******************************************************************************/
 
 /************************* GENERAL INCLUDES ***********************************/
@@ -36,6 +36,13 @@
 
 /******************************************************************************/
 
+/************************** PUBLIC FUNCTION ***********************************/
+/*******************************************************************************
+* \func: int32_t main()
+* \brief : starting and entry point for the execusion
+* \brief : the main gol of this app is to keep track of some files and log
+* \brief : the information into a file
+*******************************************************************************/
 int32_t main()
 {
   /* print start message */
