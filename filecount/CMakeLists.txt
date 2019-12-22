@@ -9,6 +9,7 @@ set (affi_VERSION_MINOR 0)
 
 set(SOURCE_DIR src)
 set(INCLUDE_DIR include)
+set(CONFIG_FILE config)
 set(INSTALL_DIR install/usr/local/bin)
 
 include_directories(${INCLUDE_DIR})
@@ -20,7 +21,7 @@ include_directories(${INCLUDE_DIR})
 # binary_order will generate binary counter file
 
 set(SOURCES ${SOURCE_DIR}/main.c ${SOURCE_DIR}/get_stats.c ${SOURCE_DIR}/get_config.c ${SOURCE_DIR}/build_configuration.c ${SOURCE_DIR}/csv_order.c ${SOURCE_DIR}/binary_order.c )
-set(HEADER_FILES ${INCLUDE_DIR}/get_stats.h ${INCLUDE_DIR}/get_config.h ${INCLUDE_DIR}/build_configuration.h ${INCLUDE_DIR}/binary_order.h)
+set(HEADER_FILES ${INCLUDE_DIR}/get_stats.h ${INCLUDE_DIR}/get_config.h ${INCLUDE_DIR}/build_configuration.h ${INCLUDE_DIR}/binary_order.h ${CONFIG_FILE}/configuration.h)
 
 add_definitions(-DDEBUG_L1=1)
 
