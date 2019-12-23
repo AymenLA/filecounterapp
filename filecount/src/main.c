@@ -38,12 +38,12 @@
 
 /************************** PUBLIC FUNCTION ***********************************/
 /*******************************************************************************
-* \func: int32_t main()
+* \func: int32_t main(void)
 * \brief : starting and entry point for the execusion
 * \brief : the main gol of this app is to keep track of some files and log
 * \brief : the information into a file
 *******************************************************************************/
-int32_t main()
+int32_t main(void)
 {
   /* print start message */
   DEF_START_MESSAGE("RUN COUNTER");

@@ -44,3 +44,9 @@
 * \brief : the main gol of this app is to keep track of some files and log
 * \brief : the information into a file
 *******************************************************************************/
+int32_t load_config_file(void)
+{
+  /** check if the configapp.txt file exists */
+
+  /** */
+}
