@@ -16,14 +16,19 @@
 /******************************************************************************/
 
 /************************* LOCAL DEFINES **************************************/
-#define DEF_START_MESSAGE(m) \
+#define MAIN_WARN_MESSAGE(m) \
 {\
-  printf("MAIN> START %s \n",m);\
+  printf("MAIN> [WARN] %s \n",m);\
 }
 
-#define DEF_STOP_MESSAGE(m) \
+#define DMAIN_ERR_MESSAGE(m) \
 {\
-  printf("MAIN> STOP %s\n",m);\
+  printf("MAIN> [ERR] %s\n",m);\
+}
+
+#define MAIN_DBG_MESSAGE(m) \
+{\
+  printf("MAIN> [DBG] %s\n",m);\
 }
 
 /******************************************************************************/
@@ -46,10 +51,10 @@
 int32_t main(void)
 {
   /* print start message */
-  DEF_START_MESSAGE("RUN COUNTER");
+  MAIN_DBG_MESSAGE("START MAIN");
 
   /* print stop message */
-  DEF_STOP_MESSAGE("RUN COUNTER")
+  MAIN_DBG_MESSAGE("STOP MAIN")
   /* end execusion : always return 0 */
   return 0;
 }
