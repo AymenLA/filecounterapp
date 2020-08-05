@@ -15,6 +15,10 @@
 
 /******************************************************************************/
 
+/************************* APPLICATION INCLUDE ********************************/
+#include "build_configuration.h"
+/******************************************************************************/
+
 /************************* LOCAL DEFINES **************************************/
 #define MAIN_WARN_MESSAGE(m) \
 {\
@@ -52,6 +56,8 @@ int32_t main(void)
 {
   /* print start message */
   MAIN_DBG_MESSAGE("START MAIN");
+
+  load_config_file();
 
   /* print stop message */
   MAIN_DBG_MESSAGE("STOP MAIN")
